@@ -33,6 +33,7 @@ $router->addRoute(['GET'], 'ping', 'ctl_common@ping');
 $router->group(['middleware'=>'jwt.auth'],function () use ($router){
     $router->addRoute(['POST'], 'logout', 'ctl_login@logout'); //退出
     $router->addRoute(['POST'], 'get_userinfo', 'ctl_member@detail'); //用户信息
+    $router->addRoute(['POST'], 'change_pwd', 'ctl_member@edit'); //用户信息
 
     $router->group(['middleware'=>'role:2'],function () use ($router){
     });

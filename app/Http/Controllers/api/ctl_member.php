@@ -125,4 +125,53 @@ class ctl_member extends Controller
             return mod_common::success([], trans('api.api_add_success'));
         }
     }
+
+    /**
+     * 修改密碼
+     *
+     * Author   Alan
+     * Created  2021-04-01 10:45
+     * Modified By Alan
+     * Modified 2020-04-01 10:45
+     *
+     * @apiSampleRequest off
+     * @api {post} change_pwd 修改密碼
+     * @apiGroup member
+     * @apiName change_pwd
+     * @apiVersion 1.0.0
+     * @apiDescription 修改密碼
+     * @apiParam {String} old_password  原密碼，必填
+     * @apiParam {String} password 新密碼，必填
+     * @apiSuccessExample {json} 返回示例:
+    {
+    "code": 0,
+    "msg": "更新成功",
+    "timestamp": 1635808511,
+    "data": []
+    }
+     */
+    public function edit(Request $request)
+    {
+        if($request->isMethod('POST'))
+        {
+            $old_password = $request->input('old_password');
+            //检测原密码
+            if(!mod_common::check_password($old_password, auth($this->guard)->user()->password))
+            {
+                return mod_common::error('原密碼不正確', -1);
+            }
+
+            $status = mod_user::save_data([
+                'do'            => mod_common::get_action(),
+                'id'            => $this->uid,
+                'password'      => $request->input('password'),
+                'update_user'   => $this->uid,
+            ]);
+            if($status < 0)
+            {
+                return mod_common::error(mod_model::get_err_msg($status), $status);
+            }
+            return mod_common::success([], trans('api.api_update_success'));
+        }
+    }
 }

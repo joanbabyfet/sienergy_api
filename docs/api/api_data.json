@@ -203,6 +203,46 @@
   },
   {
     "type": "post",
+    "url": "change_pwd",
+    "title": "修改密碼",
+    "group": "member",
+    "name": "change_pwd",
+    "version": "1.0.0",
+    "description": "<p>修改密碼</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "old_password",
+            "description": "<p>原密碼，必填</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "password",
+            "description": "<p>新密碼，必填</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "返回示例:",
+          "content": "{\n\"code\": 0,\n\"msg\": \"更新成功\",\n\"timestamp\": 1635808511,\n\"data\": []\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "app/Http/Controllers/api/ctl_member.php",
+    "groupTitle": "member"
+  },
+  {
+    "type": "post",
     "url": "get_userinfo",
     "title": "获取会员信息",
     "group": "member",
