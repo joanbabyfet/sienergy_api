@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'api_invalid_request' => '無效請求',
+    'api_illegal_request' => '非法請求',
+    'api_request_too_many' => '您的訪問過於頻繁，請稍後再訪問',
+    'api_no_data' => '暫無數據',
+    'api_sign_error' => '簽名錯誤',
+    'api_no_permission' => '無權限',
+    'api_login_success' => '登入成功',
+    'api_logout_success' => '登出成功',
+    'api_login_pass_incorrect' => '帐號或密碼錯誤',
+    'api_param_error' => '參數錯誤',
+    'api_server_error' => '服務器錯誤，請稍後重試',
+    'api_not_login' => '未登入，请先登入',
+    'api_operate_success' => '操作成功',
+    'api_submit_success' => '提交成功',
+    'api_add_success'   => '添加成功',
+    'api_update_success' => '更新成功',
+    'api_delete_success' => '刪除成功',
+    'api_upload_success' => '上傳成功',
+    'api_register_success' => '註冊成功',
+    'api_enable_success' => '啟用成功',
+    'api_disable_success' => '禁用成功',
+];

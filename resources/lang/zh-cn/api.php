@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'api_invalid_request' => '无效请求',
+    'api_illegal_request' => '非法请求',
+    'api_request_too_many' => '您的访问过于频繁，请稍后再访问',
+    'api_no_data' => '暂无数据',
+    'api_sign_error' => '签名错误',
+    'api_no_permission' => '无权限',
+    'api_login_success' => '登录成功',
+    'api_logout_success' => '登出成功',
+    'api_login_pass_incorrect' => '账号或密码错误',
+    'api_param_error' => '参数错误',
+    'api_server_error' => '服务器错误，请稍后重试',
+    'api_not_login' => '未登录，请先登录',
+    'api_operate_success' => '操作成功',
+    'api_submit_success' => '提交成功',
+    'api_add_success'   => '添加成功',
+    'api_update_success' => '更新成功',
+    'api_delete_success' => '删除成功',
+    'api_upload_success' => '上传成功',
+    'api_register_success' => '注册成功',
+    'api_enable_success' => '启用成功',
+    'api_disable_success' => '禁用成功',
+];

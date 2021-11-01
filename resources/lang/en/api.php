@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'api_invalid_request' => 'Invalid request',
+    'api_illegal_request' => 'Illegal request',
+    'api_request_too_many' => 'Your visit is too frequent, please visit again later',
+    'api_no_data' => 'No data',
+    'api_sign_error' => 'signature error',
+    'api_no_permission' => 'No permission',
+    'api_login_success' => 'Login successfully',
+    'api_logout_success' => 'Logged out',
+    'api_login_pass_incorrect' => 'Incorrect username or password',
+    'api_param_error' => 'Parameter error',
+    'api_server_error' => 'Server error,try again later',
+    'api_not_login' => 'Login in first please',
+    'api_operate_success' => 'Operated',
+    'api_submit_success' => 'Submitted',
+    'api_add_success'   => 'Added',
+    'api_update_success' => 'Updated',
+    'api_delete_success' => 'Deleted',
+    'api_upload_success' => 'Updated',
+    'api_register_success' => 'Registration success',
+    'api_enable_success' => 'Enabled',
+    'api_disable_success' => 'Disabled',
+];

@@ -1,0 +1,19 @@
+{
+  "name": "鑫盈能源api接口文檔",
+  "version": "1.0.0",
+  "description": "鑫盈能源api接口文檔",
+  "title": "鑫盈能源api接口文檔",
+  "url" : "/",
+  "sampleUrl": null,
+  "header": {
+    "title": "接口公共说明",
+    "filename": "apidoc_header.md"
+  },
+  "template": {
+    "withCompare": true,
+    "withGenerator": true,
+    "aloneDisplay": false
+  },
+  "order": [
+  ]
+}
