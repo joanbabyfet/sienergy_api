@@ -42,6 +42,11 @@ app_key|-|-
 
 ### 1.0.0版本
 #### H5接口
+- 增加 `/register` 会员注册
+- 增加 `/login` 会员登录
+- 增加 `/logout` 会员登出
+- 增加 `/get_userinfo` 获取会员信息
+- 增加 `/refresh_token` 刷新认证token
 - 增加 `/index` 获取首页数据
 - 增加 `/ip` 获取客户端ip地址
 - 增加 `/news` 获取新闻列表
