@@ -21,7 +21,7 @@ php artisan app:install
 ```
 
 ## Usage
-[鑫盈能源api接口文檔](https://lumen.laravel.com/docs)
+[鑫盈能源api接口文檔](https://joanbabyfet.github.io/sienergy_api/api/)
 
 ## Change Log
 v1.0.0 - 2021-11-02
