@@ -13,7 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        // 注册到Kernel，定義應用的 artisan 指令
+        \App\Console\Commands\cron_install::class,
     ];
 
     /**

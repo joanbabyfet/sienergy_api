@@ -123,6 +123,7 @@ $app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);
 $app->alias('cache', Illuminate\Cache\CacheManager::class); //记得加,不然会报错
 $app->register(Spatie\Permission\PermissionServiceProvider::class);
 //$app->register(Mews\Captcha\CaptchaServiceProvider::class);
+
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes
