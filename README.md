@@ -28,6 +28,7 @@ v1.0.0 - 2021-11-02
 * 增加 /register 会员注册
 * 增加 /login 会员登录
 * 增加 /logout 会员登出
+* 增加 /change_pwd 修改密碼
 * 增加 /get_userinfo 获取会员信息
 * 增加 /refresh_token 刷新认证token
 * 增加 /index 获取首页数据
